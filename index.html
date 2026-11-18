@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João V. Antunes Maciel - Portfólio</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+        }
+
+        header p.subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        header p.bio {
+            font-style: italic;
+            font-size: 0.95rem;
+            opacity: 0.85;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 24px 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h2 {
+            font-size: 1.35rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .blocks-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 600px) {
+            .blocks-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .block {
+            background: var(--bg-color);
+            border-left: 4px solid var(--accent);
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        .block h3 {
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .block p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            background: #f8fafc;
+            border-top: 1px solid var(--border-color);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 6px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>João V. Antunes Maciel</h1>
+            <p class="subtitle">Curso: Ciência de Dados &bull; Faculdade: FATEC – Adamantina</p>
+            <p class="bio">Gosto de tecnologia, conhecimento e leitura.</p>
+        </header>
+
+        <main>
+            <section class="project">
+                <h2>Projeto: Análise de Vendas e Desempenho de E-commerce</h2>
+                <div class="blocks-grid">
+                    <div class="block">
+                        <h3>Problema</h3>
+                        <p>Uma loja virtual fictícia (ou base de dados pública) precisava identificar quais categorias de produtos tinham maior taxa de abandono de carrinho e queda nas vendas trimestrais</p>
+                    </div>
+                    <div class="block">
+                        <h3>O que eu fiz</h3>
+                        <p>Desenvolvi um painel interativo e um relatório analítico para mapear o comportamento de compra dos clientes por região.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Como eu fiz</h3>
+                        <p>Utilizei Python (Pandas e Matplotlib) para limpeza e tratamento dos dados e SQL para consultas em uma base com mais de 50.000 registros de transações.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Resultado</h3>
+                        <p>Identificação de uma queda de 15% nas vendas da categoria de eletrônicos no Q3 e recomendação de ajuste logístico que reduziu o tempo de entrega em 2 dias.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>E-mail profissional: <a href="mailto:joaoantunesm@hotmail.com">joaoantunesm@hotmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/joaoantunesm" target="_blank">https://github.com/joaoantunesm</a></p>
+        </footer>
+    </div>
+</body>
+</html>
